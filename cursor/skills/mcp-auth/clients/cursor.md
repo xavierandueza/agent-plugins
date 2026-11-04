@@ -6,13 +6,15 @@ The plugin includes the ReadMe MCP server, so installing the plugin is the whole
 
 ## Authentication uses a project API key
 
-Cursor authenticates with a ReadMe project API key, not OAuth. This is a known Cursor bug that Cursor must fix: when an MCP server accepts the connection and asks for sign-in only on a later request (ReadMe asks on the first `execute-request`), Cursor never opens the sign-in page. Cursor has confirmed it is tracking the issue: https://forum.cursor.com/t/plugin-mcp-oauth-never-reaches-needsauth-authenticate-button-missing-browser-never-opens/170058
+Cursor authenticates with a ReadMe project API key, not OAuth. This is a known Cursor bug that Cursor must fix: when an MCP server accepts the connection and asks for sign-in only on a later request (ReadMe asks on the first `execute-request`), Cursor never opens the sign-in page.
 
 Until Cursor fixes it, the API key is the standard Cursor setup, so offer it without waiting for the user to ask:
 
 - The user creates the key in their project under **Settings → API Keys** (append `#/settings/api-keys` to any URL on their docs domain).
-- A key reaches one project. `x-readme-subdomain` is optional; when sent, it must match the key's project.
+- A key reaches one project. Don't send `x-readme-subdomain`; the key selects the project.
 - To work on a different project, the user replaces the key under the plugin's **Configure**.
+
+**Note:** New accounts are created with the `ai_onboarding` endpoint before continuing (see the `setup-project` skill).
 
 ## Install the ReadMe Plugin
 

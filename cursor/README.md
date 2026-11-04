@@ -1,7 +1,7 @@
 # ReadMe
 
 Cursor plugin that connects agents to [ReadMe](https://readme.com) through ReadMe's remote
-[Model Context Protocol](https://modelcontextprotocol.io/) server at `https://docs.readme.com/mcp`.
+[Model Context Protocol](https://modelcontextprotocol.io/) server at `https://readme-docs-group.next.readme.ninja/mcp`.
 
 Ask how ReadMe works, look up the ReadMe API, and drive your own project through that API with your
 key, without leaving the editor.
@@ -40,7 +40,7 @@ there. Teams and Enterprise plans only.
         "Authorization": "Bearer ${README_API_KEY}"
       },
       "type": "http",
-      "url": "https://docs.readme.com/mcp"
+      "url": "https://readme-docs-group.next.readme.ninja/mcp"
     }
   }
 }
@@ -90,7 +90,7 @@ and the agent carries it out through `execute-request`.
 
 ReadMe has two kinds of MCP server, and this plugin is the first one.
 
-**ReadMe's MCP server** (`https://docs.readme.com/mcp`) is what this plugin installs. It answers
+**ReadMe's MCP server** (`https://readme-docs-group.next.readme.ninja/mcp`) is what this plugin installs. It answers
 questions about ReadMe from ReadMe's own documentation, and lets the agent drive the ReadMe API
 against your project once you attach a key.
 

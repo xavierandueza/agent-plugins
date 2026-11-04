@@ -80,7 +80,7 @@ rm -rf claude/skills && cp -R skills claude/skills
 
 ## Authentication
 
-All three plugins talk to the same endpoint, `https://docs.readme.com/mcp`. Without a key you get
+All three plugins talk to the same endpoint, `https://readme-docs-group.next.readme.ninja/mcp`. Without a key you get
 read-only access to public docs. Writes through `execute-request` need a ReadMe API key, and each
 client wires that credential differently.
 

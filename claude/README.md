@@ -52,7 +52,7 @@ The plugin cannot read the key itself. In Claude Code, register the server once 
 
 ```
 export README_API_KEY=rdme_…
-claude mcp add --scope user --transport http readme https://docs.readme.com/mcp --header 'Authorization: Bearer ${README_API_KEY}'
+claude mcp add --scope user --transport http readme https://readme-docs-group.next.readme.ninja/mcp --header 'Authorization: Bearer ${README_API_KEY}'
 ```
 
 Keep the single quotes so Claude Code expands the variable at startup instead of writing the key into its config. Export `README_API_KEY` in the shell that launches Claude Code, then restart it. The skills keep working because the server name is unchanged.

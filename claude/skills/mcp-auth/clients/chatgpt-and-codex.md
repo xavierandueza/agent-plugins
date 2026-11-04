@@ -60,7 +60,7 @@ Currently no MCP configuration is supported via ChatGPT web due to limitations f
 
 ```sh
 codex mcp add readme \
-  --url https://docs.readme.com/mcp \
+  --url https://readme-docs-group.next.readme.ninja/mcp \
   --bearer-token-env-var README_API_KEY
 ```
 
@@ -68,7 +68,7 @@ The user must then set `README_API_KEY` in their environment. The ChatGPT deskto
 
 ```toml
 [mcp_servers.readme]
-url = "https://docs.readme.com/mcp"
+url = "https://readme-docs-group.next.readme.ninja/mcp"
 http_headers = { Authorization = "Bearer YOUR_README_API_KEY" }
 ```
 
@@ -76,11 +76,11 @@ If the user wants to connect to more than one ReadMe project, register an MCP se
 
 ```sh
 codex mcp add readme_projectA \
-  --url https://docs.readme.com/mcp \
+  --url https://readme-docs-group.next.readme.ninja/mcp \
   --bearer-token-env-var README_PROJECT_A_API_KEY
 
 codex mcp add readme_projectB \
-  --url https://docs.readme.com/mcp \
+  --url https://readme-docs-group.next.readme.ninja/mcp \
   --bearer-token-env-var README_PROJECT_B_API_KEY
 ```
 

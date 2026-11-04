@@ -21,7 +21,7 @@ Write tools such as `update-docs` need your ReadMe API key. Codex strips `Author
 
 ```
 export README_API_KEY=rdme_…
-codex mcp add readme --url https://docs.readme.com/mcp --bearer-token-env-var README_API_KEY
+codex mcp add readme --url https://readme-docs-group.next.readme.ninja/mcp --bearer-token-env-var README_API_KEY
 ```
 
 Your `readme` entry replaces the plugin's anonymous one. The skills keep working because the server name is unchanged. Find your key under **Configuration → API Keys** in your ReadMe project dashboard.

@@ -41,11 +41,11 @@ Take the subdomain from the user, or from their docs URL (`https://<subdomain>.r
 
 ### Project API keys
 
-Offer a project API key only when the user asks for API key authentication, or their client cannot sign in with OAuth. A key reaches a single project.
+Offer a project API key only when the user asks for API key authentication, or their client cannot sign in with OAuth (currently Cursor; see its client reference). A key reaches a single project.
 
 - The user creates the key in their project under **Settings → API Keys** (append `#/settings/api-keys` to any URL on their docs domain).
 - The key is sent as an `Authorization: Bearer <key>` header on the MCP server, set through the client's own MCP settings. Have the user enter it there themselves so the key stays out of the chat.
-- This is a separate MCP server entry from the plugin's. Have the user disable the plugin's ReadMe MCP server so the two don't duplicate.
+- Cursor's plugin takes the key directly. In other clients the key goes on a separate MCP server entry, so have the user disable the plugin's ReadMe MCP server to avoid duplicates.
 - `x-readme-subdomain` is optional with a key. When sent, it must match the key's project.
 
 ## Workflow
@@ -61,7 +61,7 @@ Offer a project API key only when the user asks for API key authentication, or t
 
 ## First-time account setup
 
-New accounts and projects are created through the `setup-project` skill. A user with an existing account creates their project in the ReadMe UI, signs in with OAuth, and gives you the project's subdomain.
+New accounts and projects are created through the `setup-project` skill. A user with an existing account creates their project in the ReadMe UI, signs in with OAuth, and gives you the project's subdomain. In Cursor, they set that project's API key instead.
 
 ## Cloud agents
 

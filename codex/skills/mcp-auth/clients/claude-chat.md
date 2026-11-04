@@ -12,7 +12,7 @@ The user can install the ReadMe plugin via UI by following these steps:
 4. Navigate back to Plugins and search for "ReadMe" and click on the "ReadMe" result with "yours" label on it. Once inside, click the "Add" button.
 5. In the plugin, you must click on the "Connectors" tab, and select "Connect" on the connector that comes along with the plugin. Leave the settings as defaults when options are given to you, and sign in with a ReadMe account.
 
-At this point the mcp connection is ready, and the skills will be in the environment
+At this point the mcp connection is ready, and the skills will be in the environment.
 
 ### Confirmation
 

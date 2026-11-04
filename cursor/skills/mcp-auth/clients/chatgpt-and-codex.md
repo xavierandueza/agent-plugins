@@ -27,7 +27,7 @@ On ChatGPT web you currently cannot install the ReadMe Plugin.
 You must add the ReadMe plugin marketplace from the official agent-plugins repository, then install the plugin from that marketplace.
 
 ```sh
-codex plugin marketplace add https://github.com/readmeio/agent-plugins.git
+codex plugin marketplace add https://github.com/xavierandueza/agent-plugins.git
 codex plugin add readme@readme
 ```
 
@@ -36,7 +36,7 @@ If the `codex` commands cannot be run, add the following to `~/.codex/config.tom
 ```toml
 [marketplaces.readme]
 source_type = "git"
-source = "https://github.com/readmeio/agent-plugins.git"
+source = "https://github.com/xavierandueza/agent-plugins.git"
 
 [plugins."readme@readme"]
 enabled = true
@@ -46,10 +46,3 @@ enabled = true
 
 Verify that you can now see the ReadMe plugin, its skills, and the ReadMe MCP server's tools. The user may have to restart their application for this installation to be recognized.
 
-## Sign in
-
-The user signs in with their ReadMe account when Codex or the ChatGPT desktop app prompts them, either right after install or on the first `execute-request`. In the Codex CLI, the user can also start sign-in with `codex mcp login <server-name>`, using the server name shown by `codex mcp list`.
-
-## Codex Cloud Agents
-
-Codex cloud agents cannot run these setup steps. Give the user instructions to install the ReadMe plugin through their UI and sign in there.

@@ -22,17 +22,17 @@ claude plugin install readme@readme --scope user
 Recommended if the user is working in a BiDi synced repository. The plugin is enabled in the project's `.claude/settings.json`, which is committed so that other contributors are prompted to install it.
 
 ```sh
-claude plugin marketplace add https://github.com/readmeio/agent-plugins.git --scope project
+claude plugin marketplace add https://github.com/xavierandueza/agent-plugins.git --scope project
 claude plugin install readme@readme --scope project
 ```
 
 Nothing secret is committed. Each contributor signs in with their own ReadMe account.
 
+### NOTE - restarting sessions
+
+The user may have to restart their environment for the MCP server to reload. In that case ALWAYS recommend they quit and come back to this same session to continue - don't recommend that they start a new conversation.
+
 ### Confirmation
 
 That you are able to successfully read skills from the installed ReadMe plugin.
-
-## Sign in
-
-The plugin includes the ReadMe MCP server. Claude Code prompts the user to sign in with their ReadMe account when ReadMe asks for it. To sign in at any time, the user runs `/mcp`, selects the ReadMe server, and completes sign-in in the browser.
 

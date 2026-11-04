@@ -4,8 +4,6 @@ Applies to the Chat interface in the Claude Desktop App, Claude web app (claude.
 
 ## Install the ReadMe Plugin
 
-*Note: Only do this if the user does not already have the ReadMe plugin available.*
-
 The user can install the ReadMe plugin via UI by following these steps:
 
 1. Navigate to Plugins from Customize -> Plugins and select the "Add" button, select "Add Marketplace"
